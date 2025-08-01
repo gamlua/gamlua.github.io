@@ -1,0 +1,12 @@
+# Bỏ qua file cụ thể hoặc pattern
+ignore:
+  - layout/theme.liquid
+  - templates/index.liquid
+  - snippets/**/*.liquid
+
+# Vô hiệu hóa các checks theo ID
+ignore_checks:
+  - TranslationKeyExists
+  - RequiredLayoutThemeObject
+  - MissingTemplate
+  - UnknownObject

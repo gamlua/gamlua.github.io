@@ -1,0 +1,27 @@
+{
+  "name": "Elegant",
+  "version": "1.0.0",
+  "author": "Opensuite Team",
+  "description": "Giao diện hiện đại, tối giản phù hợp cho website doanh nghiệp hoặc cá nhân.",
+  "preview_image": "assets/preview.png",
+  "settings": {
+    "colors": {
+      "primary": "#1D4ED8",
+      "secondary": "#F59E0B",
+      "background": "#FFFFFF",
+      "text": "#111827"
+    },
+    "fonts": {
+      "heading": "Roboto, sans-serif",
+      "body": "Open Sans, sans-serif"
+    },
+    "layout": "full-width",
+    "show_announcement_bar": true,
+    "enable_dark_mode": false
+  },
+  "locales": [
+    "vi",
+    "en"
+  ],
+  "default_locale": "vi"
+}

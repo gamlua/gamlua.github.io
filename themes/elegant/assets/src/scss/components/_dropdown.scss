@@ -1,0 +1,8 @@
+.dropdown-menu {
+  --bs-dropdown-link-active-bg: #c9c9c9;
+  --bs-dropdown-link-active-color: #fff;
+
+  border-color: hsl(var(--input));
+  border-style: solid;
+  border-width: 1px;
+}

@@ -1,0 +1,149 @@
+---
+page_title: About Us
+---
+{% layout 'theme' %}
+
+<section class='about-section-one position-relative w-100'>
+  <img
+    class='position-absolute left-0 right-0 w-100 z-0'
+    src='/assets/images/svg/gradient.svg'
+    alt='Background gradient'
+  >
+  <div
+    class='container py-5 d-flex flex-column flex-lg-row align-items-center gap-5 position-relative z-1'
+    style='padding-top: 90px !important'
+  >
+    <div class='w-100 d-flex flex-column gap-4' style='max-width: 380px'>
+      <p class='fw-semibold text-2xl text-elg-strawberry-500'>Gấm Lụa Media</p>
+      <p class='text-animation'>{{ 'Media and Marketing Solution' | t }}</p>
+    </div>
+    <div class='w-100 d-flex flex-column gap-5'>
+      <p class='text-lg text-elg-neutral-200'>
+        {{
+          'Gấm Lụa Media is a creative media and marketing company specializing in providing comprehensive solutions that help businesses build their brand, reach the right audience, and optimize communication effectiveness. With a team of seasoned experts in various fields such as brand strategy, content creation, and digital media, we have been accompanying more than 500 clients nationwide — from startups to multi-industry corporations.'
+          | t
+        }}
+      </p>
+      <div class='d-flex flex-row gap-5'>
+        <div>
+          <p class='fw-semibold fs-2 text-elg-neutral-100 lh-sm'>500+</p>
+          <p class='fw-semibold fs-5 text-elg-neutral-200 lh-base'>{{ 'clients' | t }}</p>
+        </div>
+        <div>
+          <p class='fw-semibold fs-2 text-elg-neutral-100 lh-sm'>{{ '5 years' | t }}</p>
+          <p class='fw-semibold fs-5 text-elg-neutral-200 lh-base'>{{ 'Experience' | t }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class='container pt-5'>
+  <h2 class='text-2xl fw-semibold text-center mb-5 mt-4'>{{ 'Our services' | t }}</h2>
+  <div class='row'>
+    <div class='col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 pb-4'>
+      <div class='outstanding-features__item text-center'>
+        <p class='outstanding-features__icon'>
+          <img src='{{ home.url }}/assets/images/png/network-channels.png' alt=''>
+        </p>
+        <p class='outstanding-features__title text-ellipsis ellipsis-2'>{{ 'Website design' | t }}</p>
+        <div class='outstanding-features__description text-ellipsis ellipsis-4'>
+          {{
+            'Our template designs are meticulously crafted, covering the most in-demand industries today with a modern, trend-leading style. They are SEO-friendly, easy to manage, and fully responsive across all devices.'
+            | t
+          }}
+        </div>
+      </div>
+    </div>
+    <div class='col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 pb-4'>
+      <div class='outstanding-features__item text-center'>
+        <p class='outstanding-features__icon'>
+          <img src='{{ home.url }}/assets/images/png/promotion.png' alt=''>
+        </p>
+        <p class='outstanding-features__title text-ellipsis ellipsis-2'>{{ 'Marketing & advertising strategy' | t }}</p>
+        <div class='outstanding-features__description text-ellipsis ellipsis-4'>
+          {{
+            'Market and competitor research, development of a comprehensive marketing strategy aligned with specific goals, and proposing a communication budget tailored to each stage of business growth.'
+            | t
+          }}
+        </div>
+      </div>
+    </div>
+    <div class='col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 pb-4'>
+      <div class='outstanding-features__item text-center'>
+        <p class='outstanding-features__icon'>
+          <img src='{{ home.url }}/assets/images/png/sale_report.png' alt=''>
+        </p>
+        <p class='outstanding-features__title text-ellipsis ellipsis-2'>{{ 'Digital Marketing' | t }}</p>
+        <div class='outstanding-features__description text-ellipsis ellipsis-4'>
+          {{
+            'Targeted advertising on Facebook, Google, TikTok, Zalo, etc. — including full-site and keyword SEO, Google Ads, YouTube Ads, and Email Marketing.'
+            | t
+          }}
+        </div>
+      </div>
+    </div>
+
+    <div class='col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 pb-4'>
+      <div class='outstanding-features__item text-center'>
+        <p class='outstanding-features__icon'>
+          <img src='{{ home.url }}/assets/images/svg/layout.svg' alt=''>
+        </p>
+        <p class='outstanding-features__title text-ellipsis ellipsis-2'>{{ 'Content Strategy and Creation' | t }}</p>
+        <div class='outstanding-features__description text-ellipsis ellipsis-4'>
+          {{
+            'PR articles, SEO copywriting, and video scripts—engaging storytelling that guides emotion. Banner design, social media posts, infographics, and company portfolios—with a high aesthetic standard.'
+            | t
+          }}
+        </div>
+      </div>
+    </div>
+
+    <div class='col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 pb-4'>
+      <div class='outstanding-features__item text-center'>
+        <p class='outstanding-features__icon'>
+          <img src='{{ home.url }}/assets/images/png/trust.png' alt=''>
+        </p>
+        <p class='outstanding-features__title text-ellipsis ellipsis-2'>
+          {{ 'Fanpage & Social Media Management' | t }}
+        </p>
+        <div class='outstanding-features__description text-ellipsis ellipsis-4'>
+          {{
+            'Content planning by campaign or month, designing trend-driven visuals and short videos. Customer care and engagement, timely responses, and community building to foster loyalty.'
+            | t
+          }}
+        </div>
+      </div>
+    </div>
+    <div class='col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 pb-4'>
+      <div class='outstanding-features__item text-center'>
+        <p class='outstanding-features__icon'>
+          <img src='{{ home.url }}/assets/images/png/discount.png' alt=''>
+        </p>
+        <p class='outstanding-features__title text-ellipsis ellipsis-2'>{{ 'Attractive promotions' | t }}</p>
+        <div class='outstanding-features__description text-ellipsis ellipsis-4'>
+          {{ "A wide range of pricing options to suit every need and business size. Cost-saving combos and attractive offers available." | t }}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class='our-customers bg-elg-neutral-900 text-elg-neutral-100'>
+  <div class='container text-center'>
+    <h2 class='text-2xl fw-semibold text-center mb-4 m-1'>{{ "Our customers" | t }}</h2>
+    <div class='slider-container'>
+      <div class='slider-track'>
+        <img src='{{ home.url }}/assets/images/jpeg/vie.jpeg' alt='Logo'>
+        <img src='{{ home.url }}/assets/images/jpeg/be.jpeg' alt='Logo'>
+        <img src='{{ home.url }}/assets/images/jpeg/dragon.jpeg' alt='Logo'>
+        <img src='{{ home.url }}/assets/images/jpeg/ngs.jpeg' alt='Logo'>
+
+        <img src='{{ home.url }}/assets/images/jpeg/vie.jpeg' alt='Logo'>
+        <img src='{{ home.url }}/assets/images/jpeg/be.jpeg' alt='Logo'>
+        <img src='{{ home.url }}/assets/images/jpeg/dragon.jpeg' alt='Logo'>
+        <img src='{{ home.url }}/assets/images/jpeg/ngs.jpeg' alt='Logo'>
+      </div>
+    </div>
+  </div>
+</section>

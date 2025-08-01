@@ -1,0 +1,38 @@
+.elg-offcanvas__search {
+  .offcanvas-header {
+    border-bottom-width: 1px;
+    border-color: var(--elg-neutral-1000);
+    border-style: solid;
+  }
+
+  &-input {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+    max-width: 600px;
+
+    border: solid 1px;
+    padding: 8px 12px;
+    border-radius: 99px;
+    border-color: hsl(var(--border));
+
+    img {
+      opacity: 0.65;
+    }
+
+    input {
+      width: 100%;
+      outline: none;
+      border: none;
+    }
+
+    &-eraser {
+      svg {
+        width: 18px;
+        height: 18px;
+        opacity: 0.65;
+      }
+    }
+  }
+}

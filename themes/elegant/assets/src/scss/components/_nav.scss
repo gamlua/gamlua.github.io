@@ -1,0 +1,131 @@
+.elg-nav__mobile {
+  span.menu-toggle {
+    font-weight: 600;
+    padding: 8px 0;
+    font-size: 16px;
+  }
+
+  .menu-arrow {
+    animation-duration: 0.2s;
+    transition-duration: 0.2s;
+  }
+
+  .sub-menu {
+    font-size: 14px;
+    background-color: var(--elg-neutral-1000);
+    font-weight: 600;
+    flex-direction: column;
+    padding: 16px;
+    gap: 12px;
+    border-radius: var(--radius);
+  }
+
+  input[type='checkbox'] ~ .sub-menu {
+    display: none;
+  }
+
+  input[type='checkbox']:checked ~ .sub-menu {
+    display: flex;
+  }
+
+  input[type='checkbox']:checked ~ .menu-toggle {
+    color: hsl(var(--elg-strawberry-500));
+
+    .menu-arrow {
+      rotate: 180deg;
+    }
+  }
+}
+
+.elg_header__nav {
+  height: 100%;
+
+  & > ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    height: 100%;
+
+    & > li {
+      height: 100%;
+
+      &:hover {
+        & > .sub-menu {
+          visibility: visible;
+          opacity: 1;
+          z-index: 9;
+          top: 72px;
+        }
+      }
+
+      & > .sub-menu {
+        position: absolute;
+        left: 0;
+        top: 85px;
+        transition: all 0.2s;
+        min-width: 240px;
+        border-radius: 4px;
+        border-color: hsl(var(--input));
+        border-style: solid;
+        border-width: 1px;
+        padding: 8px 0;
+
+        visibility: hidden;
+        opacity: 0;
+        z-index: -999;
+
+        & > li {
+          & > a {
+            padding: 4px 12px;
+            font-weight: 400;
+            display: block;
+          }
+
+          & + li {
+            border-style: solid;
+            border-color: #f3f3f3;
+            // border-top-width: 1px;
+          }
+        }
+      }
+    }
+  }
+
+  li {
+    color: var(--elg-neutral-100);
+    font-weight: 600;
+    cursor: pointer;
+    position: relative;
+    font-size: 16px;
+
+    &:hover {
+      color: hsl(var(--elg-strawberry-500));
+    }
+
+    span {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding-left: 0.75rem;
+      padding-right: 0.75rem;
+      height: 100%;
+      width: max-content;
+      transition: all 0.3s;
+    }
+  }
+
+  .sub-menu {
+    background-color: #fff;
+
+    & > li {
+      &:hover {
+        background-color: hsl(var(--elg-neutral-800));
+      }
+    }
+  }
+
+  .menu-item:hover > .sub-menu {
+    display: block;
+  }
+}

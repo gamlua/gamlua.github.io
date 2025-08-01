@@ -1,0 +1,154 @@
+<div class='container pt-5 py-md-5'>
+  <div class='elg__bottom-banner'>
+    <div class='text-center p-8'>
+      <p class='text-elg-neutral-100 mt-3 fw-semibold text-2xl'>{{ 'Hi there, welcome to Gấm Lụa!' | t }}</p>
+      <p class='text-lg text-elg-neutral-200 lh-base py-4'>
+        {{
+          'Gấm Lụa is a creative media and marketing company specializing in comprehensive solutions that help brands connect deeply with their customers. With an innovative spirit and a highly experienced team, Gấm Lụa not only develops effective communication strategies but also builds sustainable brand value.'
+          | t
+        }}
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class='container'>
+  <div class='d-flex flex-column flex-lg-row py-5 gap-4 gap-lg-0 justify-content-center justify-content-lg-between'>
+    <div class='d-flex align-items-center gap-3'>
+      <img
+        alt='{{ 'Support via hotline' | t }}'
+        width='40'
+        height='40'
+        src='{{ home.url }}/assets/images/svg/headset.svg'
+      >
+      <div class='d-flex flex-column gap-2'>
+        <p class='text-md lh-sm font-normal'>{{ 'Support via hotline' | t }}</p>
+        <p class='text-lg fw-semibold lh-base'>0354.505.600</p>
+      </div>
+    </div>
+    <div class='d-flex align-items-center gap-3'>
+      <img
+        alt='{{ 'Support via email' | t }}'
+        width='40'
+        height='40'
+        src='{{ home.url }}/assets/images/svg/envelope.svg'
+      >
+      <div class='d-flex flex-column gap-2'>
+        <p class='text-md lh-sm font-normal'>{{ 'Support via email' | t }}</p>
+        <p class='text-lg fw-semibold lh-base'>contact@gamlua.com</p>
+      </div>
+    </div>
+    <div class='d-flex align-items-center gap-3'>
+      <img
+        alt='{{ 'Try a different service' | t }}'
+        width='40'
+        height='40'
+        src='{{ home.url }}/assets/images/svg/card.svg'
+      >
+      <div class='d-flex flex-column gap-2'>
+        <p class='text-md lh-sm font-normal'>{{ 'Try a different service' | t }}</p>
+        <p class='text-lg fw-semibold lh-base'>{{ 'Contact us for more information!' | t }}</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class='elg-footer'>
+  <div class='container'>
+    <div class='elg-footer__main row d-md-flex w-100 align-items-start'>
+      <div class='col-12 col-md-3 d-flex flex-column gap-4'>
+        <div class='d-flex d-md-block align-items-center justify-content-center'>
+          <img alt='logo' width='140' height='42' src='{{ home.url }}/assets/images/png/gamlua.png'>
+        </div>
+        <div class='d-flex flex-column gap-3 text-center text-md-start'>
+          <div>
+            <p class='text-uppercase lh-sm text-sm'>{{ 'Head Office' | t }}</p>
+            <p class='text-md lh-sm text-elg-neutral-400 mt-2'>90 Nguyễn Hữu Cảnh, Phường 22, Quận Bình Thạnh, TP. HCM</p>
+          </div>
+          <div>
+            <p class='text-uppercase lh-sm text-sm'>{{ 'Hotline' | t }}</p>
+            <p class='text-md lh-sm text-elg-neutral-400 mt-2'>0354.505.600</p>
+          </div>
+          <div>
+            <p class='text-uppercase lh-sm text-sm'>{{ 'Email' | t }}</p>
+            <p class='text-md lh-sm text-elg-neutral-400 mt-2'>contact@gamlua.com</p>
+          </div>
+        </div>
+      </div>
+
+      <div class='col-3 d-none d-md-block'>
+        <p class='fw-medium'>{{ 'Information' | t }}</p>
+        <div class='mt-3 d-flex flex-column gap-2'>
+          <a class='text-md text-elg-neutral-400' href='{{ locale.root_url }}/contact-us'>{{- 'Contact Us' | t -}}</a>
+          <a class='text-md text-elg-neutral-400' href='{{ locale.root_url }}/about-us'>{{ 'About Us' | t }}</a>
+          <a class='text-md text-elg-neutral-400' href='{{ locale.root_url }}/our-team'>{{ 'Our Team' | t }}</a>
+          <a class='text-md text-elg-neutral-400' href='{{ locale.root_url }}/our-activities'>
+            {{- 'Our Activities' | t -}}
+          </a>
+        </div>
+      </div>
+
+      <div class='col-3 d-none d-md-block'>
+        <p class='fw-medium'>{{ 'News' | t }}</p>
+        <div class='mt-3 d-flex flex-column gap-2'>
+          <a class='text-md text-elg-neutral-400' href='{{ locale.root_url }}/blog'>{{ 'News & Articles' | t }}</a>
+          <a class='text-md text-elg-neutral-400' href='{{ locale.root_url }}/careers'>{{ 'Careers' | t }}</a>
+        </div>
+      </div>
+
+      <div class='col-3 d-none d-md-block'>
+        <p class='fw-medium'>{{ 'Follow us' | t }}</p>
+        <div class='my-3 d-flex flex-column gap-2'>
+          <ul class='d-flex gap-3 align-items-center'>
+            <li class='p-10 pt-0'>
+              <a href='https://www.youtube.com/@GamluaCom' rel='nofollow' aria-label='Youtube'>
+                <img class='social-icon' src='{{ home.url }}/assets/images/svg/youtube.svg' alt='Youtube'>
+              </a>
+            </li>
+            <li class='p-10 pt-0'>
+              <a href='#' rel='nofollow' aria-label='Facebook'>
+                <img class='social-icon' src='{{ home.url }}/assets/images/svg/facebook.svg' alt='Facebook'>
+              </a>
+            </li>
+            <li class='p-10 pt-0'>
+              <a href='https://www.linkedin.com/in/GamluaCom' rel='nofollow' aria-label='Linkedin'>
+                <img class='social-icon' src='{{ home.url }}/assets/images/svg/linkedin.svg' alt='Linkedin'>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <p class='fw-medium'>{{ 'Certificate' | t }}</p>
+        <div class='mt-3 d-flex flex-column gap-2'>
+          <ul>
+            <li class='p-10 pt-0'>
+              <a href='#' rel='nofollow' aria-label='Certificate'>
+                <img height='25' width='140' src='{{ home.url }}/assets/images/svg/logosalenoti.svg' alt='Certificate'>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class='elg-footer__copyright d-flex flex-column flex-md-row align-items-center justify-content-between gap-3'>
+      <p class='text-elg-neutral-900 text-md'>{{ '© 2022 Gấm Lụa. All rights reserved.' | t }}</p>
+
+      <p class='text-elg-neutral-900 text-md'>MST: 5502486</p>
+    </div>
+  </div>
+</footer>
+
+<div class='elg-btn__back-to-top d-flex justify-content-center align-items-center rounded-circle shadow position-fixed d-none'>
+  <svg
+    stroke='currentColor'
+    fill='currentColor'
+    stroke-width='0'
+    viewBox='0 0 448 512'
+    height='1em'
+    width='1em'
+    xmlns='http://www.w3.org/2000/svg'
+  >
+    <path d="M34.9 289.5l-22.2-22.2c-9.4-9.4-9.4-24.6 0-33.9L207 39c9.4-9.4 24.6-9.4 33.9 0l194.3 194.3c9.4 9.4 9.4 24.6 0 33.9L413 289.4c-9.5 9.5-25 9.3-34.3-.4L264 168.6V456c0 13.3-10.7 24-24 24h-32c-13.3 0-24-10.7-24-24V168.6L69.2 289.1c-9.3 9.8-24.8 10-34.3.4z"></path>
+  </svg>
+</div>
