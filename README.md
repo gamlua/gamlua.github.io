@@ -5,3 +5,5 @@
 
 ### Cài MySQL cho debian
     curl -O https://gamlua.github.io/scripts/setup-mysql.sh && chmod +x setup-mysql.sh && ./setup-mysql.sh && rm -r ./setup-mysql.sh
+
+#
